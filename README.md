@@ -9,6 +9,7 @@ I have created this tiny app to better understand a lot of angular concepts
 * Components
 * Pipes
 * Custom Directives
-* Multiple modules
+* Multiple Modules
 * Routing and navigation
 * Lazy loading with Modules
+* Advanced Routing ( child navigation, realtive routerlink )
