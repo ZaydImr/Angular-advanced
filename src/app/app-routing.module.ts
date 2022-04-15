@@ -14,8 +14,18 @@ const routes: Routes = [
     loadChildren: () =>
       import('./collections/collections.module').then(res=>res.CollectionsModule)
   },
+  {
+    path: 'views',
+    loadChildren: () =>
+      import('./views/views.module').then(res=>res.ViewsModule)
+  },
+  {
+    path: 'modules',
+    loadChildren: () =>
+      import('./mods/mods.module').then(res=>res.ModsModule)
+  },
   { path: '', component:HomeComponent },
-  { path: '**', component:NotFoundComponent }
+  { path: '**', component:NotFoundComponent },
 ];
 
 @NgModule({

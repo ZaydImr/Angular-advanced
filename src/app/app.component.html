@@ -1,9 +1,20 @@
 <nav class="ui container">
     <div class="ui secondary pointing menu">
+        <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="item">Home</a>
         <a routerLink="elements" routerLinkActive="active" class="item">Elements</a>
         <a routerLink="collections" routerLinkActive="active" class="item">Collections</a>
+        <a routerLink="views" routerLinkActive="active" class="item">Views</a>
+        <a routerLink="modules" routerLinkActive="active" class="item">Modules</a>
     </div>
     <div class="ui segment">
         <router-outlet></router-outlet>
     </div>
+    <div class="ui section divider"></div>
+    <div class="ui centered grid">
+        <div class="ui horizontal  small divided  list">
+            <a class="item" href="https://www.linkedin.com/in/zaydimr/" target="_blank">Zayd EL IMRANI</a>
+            <a class="item" href="https://github.com/ZaydImr/Angular-advanced" target="_blank">Free & Open Source</a>
+        </div>
+    </div>
+    
 </nav>
